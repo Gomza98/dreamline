@@ -57,7 +57,7 @@ nav ul li a:hover {
 
 /* Hero Section Styles */
 .hero {
-    background: url('rb2.jpg') no-repeat center center/cover;
+    background: url('mine.jpg') no-repeat center center/cover;
     color: #fff;
     padding: 150px 20px;
     text-align: center;
@@ -123,7 +123,7 @@ section {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-.service-item h3 {
+.service-item h2 {
     color: #f9f9f9;
     font-size: 1.2rem;
     margin-bottom: 10px;
@@ -194,8 +194,8 @@ footer {
 
 /* Why Choose Us Section Styles */
 .why-choose {
-    background-color: #1a1a1a;
-    padding: 40px 20px;
+     background: #1a1a1a;
+	padding: 40px 20px;
     text-align: center;
 }
 
@@ -566,6 +566,56 @@ footer {
     }
 }
 
+/* About Us Section */
+#about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 5px;
+  background-color: #1e1e1e; /* Dark grey background for contrast */
+  color: #fff;
+  text-align: left;
+  gap: 20px; /* Adds space between image and text */
+}
+
+#about h2 {
+  text-align: center;
+  width: 100%;
+  font-size: 32px;
+  color: #f9f9f9; /* white color */
+  margin-bottom: 2px;
+}
+
+#about div {
+  max-width: 700px;
+}
+
+#about img {
+  width: 100%;
+  height: 600px;
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  #about {
+    flex-direction: row;
+  }
+
+  #about div {
+    flex: 1;
+  }
+
+  #about img {
+    max-width: 500px; /* Restrict image size on larger screens */
+  }
+}
+
+
   </style>
 </head>
 <body>
@@ -592,7 +642,8 @@ footer {
 
   <section id="about">
     <h2>About Us</h2>
-	<p>
+	
+	<div><p>
 		At Dreamline Corporation, we are more than just a commodity trader—we are a trusted partner in the coal and chrome industry, dedicated to offering exceptional products and innovative solutions that are customized to meet the unique needs of each of our clients. With a strong focus on quality, efficiency, and customer satisfaction, we stand as leaders in the sourcing, trading, and supplying of premium-grade coal and chrome to both domestic and international markets.
 
 Our experience and deep-rooted knowledge of the industry allow us to expertly navigate the complexities of the global marketplace, providing strategic insight and unmatched supply chain solutions. Dreamline Corporation understands the critical nature of our products and their vital role in key industries such as power generation, steel manufacturing, and industrial processing, which is why we ensure consistent, reliable, and efficient delivery of all products, every single time.
@@ -602,7 +653,11 @@ We take pride in working closely with our clients to understand their specific n
 Dreamline Corporation is committed to fostering long-term, sustainable partnerships, built on trust, reliability, and transparency. We continuously invest in state-of-the-art technology and best practices to streamline operations and improve performance, ensuring that we remain at the forefront of the coal and chrome supply industry. Through this commitment to excellence, we’ve gained a reputation as an industry leader, providing our clients with tailored solutions that drive success.
 
 Whether you are a large industrial manufacturer or a smaller enterprise, our unwavering dedication to customer satisfaction, combined with our extensive industry expertise, makes us the go-to choice for all your coal and chrome requirements.
-	</p>
+	</p></div>
+	<div>
+		<img src="australia.jpg">
+	</div>
+	
   </section>
 
  <!-- Services/Products Section -->
@@ -632,32 +687,55 @@ Whether you are a large industrial manufacturer or a smaller enterprise, our unw
     </div>
   </section>
   
-  <section id="why-choose" class="why-choose">
+
+<section id="why-choose" class="why-choose">
   <h2>Why Choose Dreamline Corporation?</h2>
   <p>At Dreamline Corporation, we go beyond simply supplying coal—we offer a seamless, end-to-end service that ensures efficiency, reliability, and customer satisfaction. Our expertise and extensive network allow us to provide:</p>
+  
   <div class="why-choose-list">
     <div class="why-choose-item">
       <h3>✅ Reliable Sourcing & Supply Chain</h3>
       <p>We work directly with leading mining operations to ensure a steady and consistent supply of high-quality coal and chrome.</p>
     </div>
+
     <div class="why-choose-item">
       <h3>✅ Competitive Pricing</h3>
       <p>Our strong industry connections allow us to provide affordable pricing without compromising quality.</p>
     </div>
+
     <div class="why-choose-item">
       <h3>✅ Tailored Solutions</h3>
       <p>Whether you need bulk shipments, specialized coal blending, or long-term supply contracts, we cater to your unique needs.</p>
     </div>
+
     <div class="why-choose-item">
       <h3>✅ Logistics & Timely Delivery</h3>
       <p>We ensure on-time deliveries through our robust transportation and logistics network, minimizing downtime and disruptions.</p>
     </div>
+
     <div class="why-choose-item">
       <h3>✅ Sustainable & Responsible Trading</h3>
       <p>We are committed to ethical sourcing, environmental sustainability, and regulatory compliance, ensuring a responsible and future-ready coal industry.</p>
     </div>
+
+    <div class="why-choose-item">
+      <h3>✅ Quality Assurance & Compliance</h3>
+      <p>Our products undergo strict quality control and meet all necessary industry standards and certifications.</p>
+    </div>
+
+
+    <div class="why-choose-item">
+      <h3>✅ Exceptional Customer Support</h3>
+      <p>Our dedicated team provides personalized support, ensuring smooth transactions and customer satisfaction at every step.</p>
+    </div>
+
+    <div class="why-choose-item">
+      <h3>✅ Scalable Supply Capacity</h3>
+      <p>From small-scale buyers to large industrial orders, we have the capacity to fulfill varying demands efficiently.</p>
+    </div>
   </div>
 </section>
+
 
 
   <section id="gallery" class="gallery">
@@ -667,7 +745,11 @@ Whether you are a large industrial manufacturer or a smaller enterprise, our unw
       <img src="delivery.jpg" alt="Coal Transport">
       <img src="processing.jpg" alt="Coal Processing">
       <img src="transport.jpg" alt="Coal Delivery">
-    </div>
+	  <img src="australia.jpg" alt="Coal Delivery">
+	  <img src="coall.jpg" alt="Coal Delivery">
+	  <img src="hole.jpg" alt="Coal Delivery">
+	  
+	  
     </div>
   </section>
 
@@ -786,8 +868,8 @@ Whether you are a large industrial manufacturer or a smaller enterprise, our unw
       const whatsappMessage = `Hello, I'm ${name}. My phone number is ${phone}. ${message}`;
       
       // Replace with your actual WhatsApp number
-      const whatsappNumber = '+27672783746';
-      const whatsappUrl = `https://wa.me/${+27672783746}?text=${encodeURIComponent(whatsappMessage)}`;
+      const whatsappNumber = '+1234567890';
+      const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
       
       window.open(whatsappUrl, '_blank');
       closeContactModal();
